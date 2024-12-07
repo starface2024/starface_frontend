@@ -1,0 +1,207 @@
+@import "../base.css";
+@import "./style.css";
+@import "./colors.css";
+@import "./wickedcss.min.css";
+
+/* Font  */
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--gray-50);
+}
+
+/* .container {
+  max-width: 1359px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+} */
+
+@media (min-width: 576px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+  width: 4px;
+  /* width of the entire scrollbar */
+  /* height of the entire scrollbar */
+  height: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(---gray-300);
+  /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(---primary-color);
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid var(---primary-color);
+  /* creates padding around scroll thumb */
+}
+
+/* p {
+  font-family: 'Source Sans 3', sans-serif;
+} */
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+} */
+
+/* select {
+  @apply bg-transparent;
+} */
+/* @layer base {
+  body {
+    
+  }
+} */
+
+@layer utilities {
+  .tick {
+    display: inline-block;
+    width: 1.55rem;
+    height: 0.5rem;
+    border: 2px solid currentColor;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+    margin-right: 0.25rem;
+  }
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+input[type='checkbox'] {
+  accent-color: #2f929c;
+}
+
+/* Accordion  */
+.p-accordion .p-accordion-content, .p-accordion .p-accordion-header:not(.p-disabled).p-highlight .p-accordion-header-link, .p-accordion .p-accordion-header .p-accordion-header-link {
+  background: unset;
+  border-color: unset
+}
+
+.p-accordion .p-accordion-header .p-accordion-header-link {
+  padding: 10px;
+}
+
+.p-accordion .p-accordion-content {
+  padding: 0 2px 2px 0;
+}
+
+.p-icon {
+  height: 13px;
+  width: 13px;
+}
+
+.p-rating .p-rating-item.p-rating-item-active .p-rating-icon {
+  color: var(---warning-color);
+}
+
+
+/* Remove arrows from number input */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+
+.el-select {
+  --el-select-border-color-hover: var(--el-border-color-hover);
+  --el-select-disabled-border: var(--el-disabled-border-color);
+  --el-select-font-size: var(--el-font-size-base);
+  --el-select-close-hover-color: var(--el-text-color-secondary);
+  --el-select-input-color: var(--el-text-color-placeholder);
+  --el-select-multiple-input-color: var(--el-text-color-regular);
+  --el-select-input-focus-border-color: var(---primary-color) !important;
+  --el-select-input-font-size: 14px;
+  --el-select-width: 100%;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  width: var(--el-select-width);
+}
+
+/* Add these styles in your global CSS file or in your main component's styles */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  z-index: 9999;
+}

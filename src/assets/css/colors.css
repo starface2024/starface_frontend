@@ -1,0 +1,185 @@
+
+.a,
+.b,
+.c,
+.d,
+.e,
+.A,
+.B,
+.C,
+.D,
+.E {
+    background-color: #FF0000 !important;
+    color: #fff;
+}
+
+.f,
+.g,
+.h,
+.i,
+.j,
+.J,
+.I,
+.H,
+.G,
+.F {
+    background-color: #FFB20F;
+}
+
+.K,
+.L,
+.M,
+.N,
+.O,
+.P,
+.m,
+.n,
+.o,
+.p,
+.k,
+.l {
+    background-color: #000;
+    color: #fff;
+}
+
+.q,
+.r,
+.s,
+.t,
+.u,
+.Q,
+.R,
+.S,
+.T,
+.U {
+    background-color: #01445f;
+    color: #fff;
+}
+
+.v,
+.w,
+.x,
+.y,
+.z,
+.V,
+.W,
+.X,
+.Y,
+.Z {
+    background-color: rgb(11, 100, 11);
+    color: #fff;
+}
+
+
+/* Statuses  */
+.status.active {
+    color: green;
+    background-color: rgba(0, 128, 0, 0.175);
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    border: 1px solid rgba(0, 128, 0, 0.175);
+    border-radius: 4px;
+}
+
+.completed,
+.approved,
+.activated,
+.in-stock,
+.registered,
+.published, .confirmed {
+    color: green;
+    background-color: rgba(0, 128, 0, 0.175);
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    border: 1px solid rgba(0, 128, 0, 0.175);
+    border-radius: 4px;
+}
+
+.delivered {
+    color: rgb(41, 87, 89);
+    background-color: rgba(0, 255, 255, 0.175);
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    border: 1px solid rgba(0, 255, 255, 0.175);
+    border-radius: 4px;
+}
+
+.canceled,
+.deactivated,
+.rejected,
+.banned,
+.out-of-stock,
+.not-registered {
+    color: red;
+    background-color: rgba(255, 0, 0, 0.175);
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    border: 1px solid rgba(255, 0, 0, 0.175);
+    border-radius: 4px;
+}
+
+.in-progress {
+    color: purple;
+    background-color: rgba(128, 0, 128, 0.175);
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    border: 1px solid rgba(128, 0, 128, 0.175);
+    border-radius: 4px;
+}
+
+.pending,
+.draft {
+    color: orange;
+    background-color: rgba(255, 166, 0, 0.175);
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    border: 1px solid rgba(255, 166, 0, 0.175);
+    border-radius: 4px;
+}
+
+
+.jpg {
+    background-image: url('../img/icons/jpg.png');
+}
+
+.jpeg {
+    background-image: url('../img/icons/jpeg.png');
+}
+
+.png {
+    background-image: url('../img/icons/png.png');
+}
+
+.docx {
+    background-image: url('../img/icons/docx.png');
+}
+
+.doc {
+    background-image: url('../img/icons/doc.png');
+}
+
+.pdf {
+    background-image: url('../img/icons/pdf.png');
+}
+
+.svg {
+    background-image: url('../img/icons/svg.png');
+}
+
+.gif {
+    background-image: url('../img/icons/gif.png');
+}
+
+.jpg,
+.jpeg,
+.png,
+.docx,
+.doc,
+.pdf,
+.svg,
+.gif {
+    width: 48px;
+    height: 48px;
+    background-size: contain;
+    background-position: center;
+}
